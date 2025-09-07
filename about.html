@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Transportion</title>
-    <meta name="description" content="">
+    <title>About Us - Proventurax International Logistics</title>
+    <meta name="description"
+        content="Proventurax International Logistics - Founded in 2024, we provide complete import and export solutions with a focus on South India's industrial hubs.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
@@ -35,6 +36,228 @@
             display: block;
             margin: 0 auto;
         }
+
+        /* Responsive contact_location section for about.html */
+        .contact_location {
+            background: #f6fbfe;
+            padding: 40px 0 0 0;
+        }
+
+        .contact_location .location_left {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .contact_location .logo {
+            width: 100%;
+            max-width: 260px;
+            margin: 0 0 18px 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .contact_location .logo img {
+            width: 100%;
+            max-width: 220px;
+            height: auto;
+            display: inline-block;
+        }
+
+        .contact_location ul {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        .contact_location ul li a,
+        .contact_location ul li span {
+            font-size: 1.7rem;
+            color: #1a237e;
+            transition: color 0.2s;
+        }
+
+        .contact_location ul li a:hover {
+            color: #0d47a1;
+        }
+
+        .contact_location .single_location {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        /* Added new styles for enhanced UI */
+        .single_value {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .single_value:hover {
+            transform: translateY(-10px);
+            border-bottom: 3px solid #5DB2FF !important;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .single_value .icon {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .single_value:hover .icon {
+            transform: scale(1.1);
+            background: rgba(93, 178, 255, 0.2) !important;
+        }
+
+        .about_img {
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+
+        .about_img img {
+            transition: all 0.5s ease;
+        }
+
+        .about_img:hover img {
+            transform: scale(1.03);
+        }
+
+        .boxed-btn3,
+        .boxed-btn3-line {
+            transition: all 0.3s ease;
+        }
+
+        .boxed-btn3:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(93, 178, 255, 0.3);
+        }
+
+        .boxed-btn3-line:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 29, 56, 0.1);
+        }
+
+        .cta_box {
+            transition: all 0.3s ease;
+        }
+
+        .cta_box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 991px) {
+            .contact_location .location_left {
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .contact_location .logo {
+                margin-bottom: 12px;
+                justify-content: center;
+            }
+
+            .contact_location ul {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .contact_location .row>div {
+                margin-bottom: 18px;
+            }
+
+            .contact_location .single_location {
+                text-align: center;
+            }
+
+            .contact_location .logo {
+                margin-bottom: 16px;
+                justify-content: center;
+            }
+
+            .contact_location .location_left {
+                align-items: center;
+            }
+
+            .contact_location ul {
+                justify-content: center;
+            }
+
+            .section_title h3 {
+                font-size: 32px !important;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .contact_location .logo {
+                max-width: 140px;
+            }
+
+            .contact_location .logo img {
+                max-width: 120px;
+            }
+
+            .section_title h3 {
+                font-size: 28px !important;
+            }
+        }
+    </style>
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    }
+
+    .contact_location .logo {
+    margin-bottom: 12px;
+    justify-content: center;
+    }
+
+    .contact_location ul {
+    justify-content: center;
+    }
+    }
+
+    @media (max-width: 767px) {
+    .contact_location .row>div {
+    margin-bottom: 18px;
+    }
+
+    .contact_location .single_location {
+    text-align: center;
+    }
+
+    .contact_location .logo {
+    margin-bottom: 16px;
+    justify-content: center;
+    }
+
+    .contact_location .location_left {
+    align-items: center;
+    }
+
+    .contact_location ul {
+    justify-content: center;
+    }
+    }
+
+    @media (max-width: 575px) {
+    .contact_location .logo {
+    max-width: 140px;
+    }
+
+    .contact_location .logo img {
+    max-width: 120px;
+    }
+    }
     </style>
 </head>
 
@@ -94,7 +317,7 @@
                                             <li><a href="service.html">Services</a></li>
                                             <li><a href="#">Resources</a></li>
                                             <li><a href="#">Industries</a></li>
-                                            <li><a href="#">carriers </a></li>
+                                            <li><a href="#">careers </a></li>
                                             <li><a href="#">News</a></li>
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
@@ -128,446 +351,393 @@
     </div>
     <!--/ bradcam_area  -->
 
-    <!-- chose_area  -->
-
-    <div class="chose_area">
+    <!-- about_us_area  -->
+    <div class="about_us_area" style="padding: 100px 0 70px;">
         <div class="container">
-            <div class="features_main_wrap">
-                <div class="row align-items-center justify-content-center">
-                    <!-- Text Column -->
-                    <div class="col-xl-7 col-lg-7 col-md-7 order-1 order-md-1">
-                        <div class="features_info" style="text-align: left;">
-                            <h3 style="font-weight: 700; color: #1a237e;">About Proventurax</h3>
-                            <p style="font-size: 1.08em; line-height: 1.6; color: #444;">
-                                <strong>Proventurax International Logistics</strong> was founded in 2024 by two friends
-                                with a shared vision for operational excellence and customer service. Headquartered in
-                                Bangalore, we bring over 25 years of combined experience to deliver complete import and
-                                export solutions for clients worldwide.
-                            </p>
-
-                            <div style="margin-bottom: 14px;">
-                                <span
-                                    style="display: inline-block; background: #e3f2fd; color: #1976d2; font-weight: 600; border-radius: 6px; padding: 6px 16px;">Connecting
-                                    South India to the World</span>
-                                <p style="margin-top: 8px; line-height: 1.6;">
-                                    We specialize in supporting the industrial and manufacturing hubs of Chennai,
-                                    Coimbatore, Hosur, Mysuru, and Hyderabad—regions known for their thriving
-                                    automotive, textile, aerospace, and technology sectors. Our trusted global partner
-                                    network ensures seamless, reliable, and efficient freight forwarding.
-                                </p>
-                            </div>
-
-                            <div style="margin-bottom: 14px;">
-                                <span
-                                    style="display: inline-block; background: #e8f5e9; color: #388e3c; font-weight: 600; border-radius: 6px; padding: 6px 16px;">Driven
-                                    by Innovation & Sustainability</span>
-                                <p style="margin-top: 8px; line-height: 1.6;">
-                                    We embrace digital solutions and sustainable practices to deliver smarter logistics
-                                    and lasting value for our clients. Our commitment to innovation keeps us at the
-                                    forefront of the industry.
-                                </p>
-                            </div>
-
-                            <div class="core-values-section"
-                                style="background: #f8f9fa; border-radius: 10px; padding: 18px 15px; margin-top: 22px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
-                                <h4 style="color: #1a237e; margin-bottom: 10px;">Core Values</h4>
-                                <ul style="list-style: none; padding-left: 0; margin: 0;">
-                                    <li><b>Reliability</b> – Consistent, dependable solutions</li>
-                                    <li><b>Integrity</b> – Honest, transparent, and ethical</li>
-                                    <li><b>Operational Excellence</b> – Efficiency and precision</li>
-                                    <li><b>Sustainable Logistics</b> – Smarter, greener supply chains</li>
-                                    <li><b>Local Expertise</b> – Deep regional knowledge, global vision</li>
-                                </ul>
-                            </div>
-
-                            <div style="margin-top: 22px;">
-                                <a class="boxed-btn3-line" href="about.html">Learn More</a>
-                            </div>
-                        </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section_title text-center mb-55">
+                        <span
+                            style="display: block; font-size: 16px; color: #5DB2FF; font-weight: 500; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px;">DISCOVER
+                            OUR JOURNEY</span>
+                        <h3 style="font-size: 40px; color: #001D38; margin-bottom: 15px; font-weight: 700;">Our Story
+                        </h3>
+                        <div style="width: 80px; height: 3px; background: #5DB2FF; margin: 0 auto;"></div>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Image Column -->
-                    <div class="col-xl-5 col-lg-5 col-md-6 order-2 order-md-2">
-                        <div class="about_image text-center">
-                            <img src="https://static.wixstatic.com/media/e32bfd_e9c4a26eafc644abb69afc9d7ab23ff4~mv2.png/v1/fill/w_600,h_400,al_c,q_90,enc_avif,quality_auto/20%20%2B%20(2).png"
-                                alt="About Proventurax"
-                                style="max-width: 100%; height: auto; border-radius: 14px; box-shadow: 0 6px 22px rgba(0,0,0,0.1);">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about_img wow fadeInLeft" data-wow-duration="1s"
+                        style="padding-right: 30px; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1670121180530-cfcba4438038?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2VhJTIwZnJlaWdodHxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="Logistics Operations"
+                            style="width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about_info pl-md-4 mt-5 mt-lg-0">
+                        <h3
+                            style="color: #001D38; font-weight: 700; font-size: 28px; margin-bottom: 25px; position: relative; padding-bottom: 15px;">
+                            Committed to Excellence in Global Logistics
+                            <span
+                                style="position: absolute; bottom: 0; left: 0; width: 50px; height: 3px; background: #5DB2FF;"></span>
+                        </h3>
+                        <p style="font-size: 16px; line-height: 1.8; margin-bottom: 25px; color: #506172;">
+                            Proventurax International Logistics was founded in 2024 by two friends with a shared
+                            commitment to
+                            operational excellence and high-quality customer service. With more than 25 years of
+                            combined experience in
+                            the logistics industry, we are headquartered in Bangalore, India, and serve clients
+                            worldwide with complete
+                            import and export solutions.
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.8; margin-bottom: 25px; color: #506172;">
+                            We place a strong emphasis on supporting the industrial and manufacturing hubs of South
+                            India, including
+                            Chennai, Coimbatore, Hosur, Mysuru, and Hyderabad—regions known for their thriving
+                            automotive, textile,
+                            aerospace, and technology sectors.
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.8; margin-bottom: 25px; color: #506172;">
+                            Through our trusted global partner network, we provide comprehensive freight forwarding
+                            services that
+                            ensure reliable, efficient, and seamless connections between South India and the world.
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px; color: #506172;">
+                            As we look ahead, Proventurax remains committed to embracing innovation, sustainability, and
+                            digital
+                            solutions to deliver smarter logistics and create lasting value for our clients across the
+                            globe.
+                        </p>
+                        <div>
+                            <a href="contact.html" class="boxed-btn3" style="border-radius: 5px;">Contact Us</a>
+                            <a href="service.html" class="boxed-btn3-line"
+                                style="margin-left: 15px; border-radius: 5px;">Our Services</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!--/ about_us_area  -->
 
-
-        <!--/ chose_area  -->
-
-        <!-- counter_area  -->
-        <div class="counter_area">
-            <div class="container">
-                <div class="offcan_bg">
-                    <div class="row">
-                        <div class="col-xl-3 col-md-3">
-                            <div class="single_counter text-center">
-                                <h3> <span class="counter">25</span> <span>+</span> </h3>
-                                <p>Industry Experience</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-3">
-                            <div class="single_counter text-center">
-                                <h3> <span class="counter">99</span> <span>%</span> </h3>
-                                <p>CUSTOMER SATISFACTION RATE</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-3">
-                            <div class="single_counter text-center">
-                                <h3> <span class="counter">2342</span></h3>
-                                <p>Happy Client</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-3">
-                            <div class="single_counter text-center">
-                                <h3> <span class="counter">3245</span></h3>
-                                <p>Business Done</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <!-- core_values_area  -->
+    <div class="core_values_area"
+        style="background-color: #F5F7FB; padding: 100px 0; position: relative; overflow: hidden;">
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('img/pattern.png'); opacity: 0.04;">
         </div>
-        <!-- /counter_area  -->
-        <!-- contact_action_area  -->
-        <div class="contact_action_area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-7 col-md-6">
-                        <div class="action_heading">
-                            <h3>100% secure and safe</h3>
-                            <p>At Proventurax, our core values are built on reliability, innovation, and
-                                customer-centricity. With integrity at
-                                our foundation and a passion for operational excellence, we connect global markets
-                                through
-                                sustainable,
-                                efficient logistics—grounded in local expertise and driven by a global vision.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-md-6">
-                        <div class="call_add_action">
-                            <a href="#" class="boxed-btn3">+91 9886066621</a>
-                        </div>
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section_title text-center mb-60">
+                        <span
+                            style="display: block; font-size: 16px; color: #5DB2FF; font-weight: 500; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px;">WHAT
+                            DRIVES US</span>
+                        <h3 style="font-size: 40px; color: #001D38; margin-bottom: 15px; font-weight: 700;">Core Values
+                        </h3>
+                        <div style="width: 80px; height: 3px; background: #5DB2FF; margin: 0 auto 30px;"></div>
+                        <p style="font-size: 18px; line-height: 1.8; max-width: 800px; margin: 0 auto; color: #506172;">
+                            At Proventurax, our core values are built on reliability, innovation, and
+                            customer-centricity. With integrity at
+                            our foundation and a passion for operational excellence, we connect global markets through
+                            sustainable,
+                            efficient logistics—grounded in local expertise and driven by a global vision.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /contact_action_area  -->
-
-        <div class="transportaion_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single_transport">
-                            <div class="icon">
-                                <img src="img/svg_icon/airplane.png" alt="">
-                            </div>
-                            <h3>Speed & Efficiency</h3>
-                            <p>Optimized routes and quick
-                                turnaround for every shipment.
-                                Reliable delivery across cities and
-                                borders.</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="single_value wow fadeInUp" data-wow-delay=".2s"
+                        style="background: white; padding: 40px 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); height: 100%; transition: all 0.3s ease; border-bottom: 3px solid transparent;">
+                        <div class="icon mb-4"
+                            style="color: #5DB2FF; font-size: 45px; text-align: center; background: rgba(93, 178, 255, 0.1); width: 80px; height: 80px; line-height: 80px; border-radius: 50%; margin: 0 auto 25px;">
+                            <i class="fa fa-check-circle"></i>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single_transport">
-                            <div class="icon">
-                                <img src="img/svg_icon/world.png" alt="">
-                            </div>
-                            <h3>Secure Handling</h3>
-                            <p>Careful packaging and safe
-                                transit for complete peace of mind.
-                                Automated dispatch ensures timely
-                                delivery every time.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single_transport">
-                            <div class="icon">
-                                <img src="img/svg_icon/world.png" alt="">
-                            </div>
-                            <h3>24/7 Support</h3>
-                            <p>Round-the-clock assistance for your logistics needs.
-                                Global reach with seamless and secure delivery.</p>
-                        </div>
+                        <h4
+                            style="font-size: 22px; margin-bottom: 15px; color: #001D38; text-align: center; font-weight: 600;">
+                            Reliability</h4>
+                        <p style="color: #506172; font-size: 16px; text-align: center; line-height: 1.6;">Consistent and
+                            dependable solutions that businesses can trust.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-
-
-
-
-        <!-- Estimate_area start  -->
-        <div class="Estimate_area overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-5">
-                        <div class="Estimate_info">
-                            <h3>Get free Estimate</h3>
-                            <p>At PROVENTURAX INTERNATIONAL LOGISTICS LLP, we believe our people are our greatest
-                                strength.
-                                We are always on the lookout for passionate, driven, and dynamic individuals who want to
-                                be
-                                part of a growing global logistics force.</p>
-                            <a href="#" class="boxed-btn3">+91 9886066621</a>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="single_value wow fadeInUp" data-wow-delay=".4s"
+                        style="background: white; padding: 40px 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); height: 100%; transition: all 0.3s ease; border-bottom: 3px solid transparent;">
+                        <div class="icon mb-4"
+                            style="color: #5DB2FF; font-size: 45px; text-align: center; background: rgba(93, 178, 255, 0.1); width: 80px; height: 80px; line-height: 80px; border-radius: 50%; margin: 0 auto 25px;">
+                            <i class="fa fa-balance-scale"></i>
                         </div>
+                        <h4
+                            style="font-size: 22px; margin-bottom: 15px; color: #001D38; text-align: center; font-weight: 600;">
+                            Integrity</h4>
+                        <p style="color: #506172; font-size: 16px; text-align: center; line-height: 1.6;">Honest,
+                            transparent, and ethical in everything we do.</p>
                     </div>
-                    <div class="col-xl-8 col-lg-8 col-md-7">
-                        <div class="form">
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="input_field">
-                                            <input type="text" placeholder="Your name">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="input_field">
-                                            <input type="email" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="input_field">
-                                            <select class="wide">
-                                                <option data-display="Product type">Product type</option>
-                                                <option value="1">small</option>
-                                                <option value="2">standard</option>
-                                                <option value="3">high</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="input_field">
-                                            <select class="wide">
-                                                <option data-display="Product size">Product size</option>
-                                                <option value="1">M</option>
-                                                <option value="2">L</option>
-                                                <option value="3">Xl</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="input_field">
-                                            <select class="wide">
-                                                <option data-display="City of departure">City of departure</option>
-                                                <option value="1">departure</option>
-                                                <option value="2">departure</option>
-                                                <option value="3">departure</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="input_field">
-                                            <select class="wide">
-                                                <option data-display="Delivery city">City of departure</option>
-                                                <option value="1">Delivery</option>
-                                                <option value="2">Delivery</option>
-                                                <option value="3">Delivery</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12">
-                                        <div class="input_field">
-                                            <textarea placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12">
-                                        <div class="input_field">
-                                            <button class="boxed-btn3-line" type="submit">Send Estimate</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="single_value wow fadeInUp" data-wow-delay=".6s"
+                        style="background: white; padding: 40px 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); height: 100%; transition: all 0.3s ease; border-bottom: 3px solid transparent;">
+                        <div class="icon mb-4"
+                            style="color: #5DB2FF; font-size: 45px; text-align: center; background: rgba(93, 178, 255, 0.1); width: 80px; height: 80px; line-height: 80px; border-radius: 50%; margin: 0 auto 25px;">
+                            <i class="fa fa-trophy"></i>
                         </div>
+                        <h4
+                            style="font-size: 22px; margin-bottom: 15px; color: #001D38; text-align: center; font-weight: 600;">
+                            Operational Excellence</h4>
+                        <p style="color: #506172; font-size: 16px; text-align: center; line-height: 1.6;">Delivering
+                            efficiency and precision across every service.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="single_value wow fadeInUp" data-wow-delay=".8s"
+                        style="background: white; padding: 40px 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); height: 100%; transition: all 0.3s ease; border-bottom: 3px solid transparent;">
+                        <div class="icon mb-4"
+                            style="color: #5DB2FF; font-size: 45px; text-align: center; background: rgba(93, 178, 255, 0.1); width: 80px; height: 80px; line-height: 80px; border-radius: 50%; margin: 0 auto 25px;">
+                            <i class="fa fa-leaf"></i>
+                        </div>
+                        <h4
+                            style="font-size: 22px; margin-bottom: 15px; color: #001D38; text-align: center; font-weight: 600;">
+                            Sustainable Logistics</h4>
+                        <p style="color: #506172; font-size: 16px; text-align: center; line-height: 1.6;">Driving
+                            smarter, greener supply chain solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="single_value wow fadeInUp" data-wow-delay="1s"
+                        style="background: white; padding: 40px 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); height: 100%; transition: all 0.3s ease; border-bottom: 3px solid transparent;">
+                        <div class="icon mb-4"
+                            style="color: #5DB2FF; font-size: 45px; text-align: center; background: rgba(93, 178, 255, 0.1); width: 80px; height: 80px; line-height: 80px; border-radius: 50%; margin: 0 auto 25px;">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <h4
+                            style="font-size: 22px; margin-bottom: 15px; color: #001D38; text-align: center; font-weight: 600;">
+                            Local Expertise</h4>
+                        <p style="color: #506172; font-size: 16px; text-align: center; line-height: 1.6;">Deep regional
+                            knowledge that ensures seamless global connections.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 d-flex align-items-center justify-content-center">
+                    <div class="cta_box wow fadeInUp" data-wow-delay="1.2s"
+                        style="background: #001D38; padding: 40px; border-radius: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h4 style="font-size: 22px; margin-bottom: 20px; color: white; font-weight: 600;">Ready to get
+                            started?</h4>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 16px; margin-bottom: 25px;">Let us help you
+                            optimize your supply chain with our expert logistics solutions.</p>
+                        <a href="service.html" class="boxed-btn3"
+                            style="background: #5DB2FF; border-color: #5DB2FF; border-radius: 5px;">Our Services</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Estimate_area end  -->
+    </div>
+    <!--/ core_values_area  -->
 
-        <!-- contact_location  -->
-        <div class="contact_location">
+    <!-- contact_location  -->
+    <div class="contact_location">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-3 mb-md-0">
+                    <div class="location_left d-flex flex-column align-items-start justify-content-center">
+                        <div class="logo mb-3" style="max-width:260px; width:100%; text-align:left;">
+                            <a href="index.html">
+                                <img src="img/logob.jpg" alt="Proventurax Logo"
+                                    style="width:100%; max-width:220px; height:auto; display:inline-block;">
+                            </a>
+                        </div>
+                        <ul class="d-flex flex-row gap-3 mb-0"
+                            style="list-style:none; padding-left:0; justify-content:flex-start; width:100%;">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-12 mb-3 mb-md-0 d-flex flex-column justify-content-center">
+                    <div class="single_location">
+                        <h3><img src="img/icon/address.svg" alt="" style="width:22px; margin-right:6px;"> Location
+                        </h3>
+                        <p>Adress Data Want to be Added<br>City Here<br>Land Mark here</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-12 d-flex flex-column justify-content-center">
+                    <div class="single_location">
+                        <h3><img src="img/icon/support.svg" alt="" style="width:22px; margin-right:6px;"> Contact
+                        </h3>
+                        <p>+91 9886066621 <br>balamurugan.pillai@proventuax.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/ contact_location  -->
+
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="footer_top">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="location_left">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="">
-                                </a>
-                            </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Services
+                            </h3>
                             <ul>
-                                <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                                <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                <li><a href="#"> <i class="fa fa-youtube"></i> </a></li>
+                                <li><a href="#">Air Transportation</a></li>
+                                <li><a href="#">Ocean Freight</a></li>
+                                <li><a href="#">Ocean Cargo</a></li>
+                                <li><a href="#">Logistics</a></li>
+                                <li><a href="#">Warehouse Moving</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Company
+                            </h3>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#"> Testimonials</a></li>
+                                <li><a href="#"> Why Us?</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-3">
-                        <div class="single_location">
-                            <h3> <img src="img/icon/address.svg" alt=""> Location</h3>
-                            <p>Adress Data Want to be Added
-                                City Here</p>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Industries
+                            </h3>
+                            <ul>
+                                <li><a href="#">Chemicals</a></li>
+                                <li><a href="#">Automotive</a></li>
+                                <li><a href="#"> Consumer Goods</a></li>
+                                <li><a href="#">Life Science</a></li>
+                                <li><a href="#">Foreign Trade</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-3">
-                        <div class="single_location">
-                            <h3> <img src="img/icon/support.svg" alt=""> Location</h3>
-                            <p>+91 9886066621 <br>
-                                balamurugan.pillai@proventuax.com</p>
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Subscribe
+                            </h3>
+                            <form action="#" class="newsletter_form">
+                                <input type="text" placeholder="Enter your mail">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                            <p class="newsletter_text">At Proventurax, our core values are built on reliability,
+                                innovation, and customer-centricity. With integrity at
+                                our foundation and a passion for operational excellence, we connect global markets
+                                through sustainable,
+                                efficient logistics—grounded in local expertise and driven by a global vision.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--/ contact_location  -->
-
-
-        <!-- footer start -->
-        <footer class="footer">
-            <div class="footer_top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-3 col-md-6 col-lg-3">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                    Services
-                                </h3>
-                                <ul>
-                                    <li><a href="#">Air Transportation</a></li>
-                                    <li><a href="#">Ocean Freight</a></li>
-                                    <li><a href="#">Ocean Cargo</a></li>
-                                    <li><a href="#">Logistics</a></li>
-                                    <li><a href="#">Warehouse Moving</a></li>
-                                </ul>
-
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-md-6 col-lg-2">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                    Company
-                                </h3>
-                                <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#"> Testimonials</a></li>
-                                    <li><a href="#"> Why Us?</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 col-lg-3">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                    Industries
-                                </h3>
-                                <ul>
-                                    <li><a href="#">Chemicals</a></li>
-                                    <li><a href="#">Automotive</a></li>
-                                    <li><a href="#"> Consumer Goods</a></li>
-                                    <li><a href="#">Life Science</a></li>
-                                    <li><a href="#">Foreign Trade</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6 col-lg-4">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                    Subscribe
-                                </h3>
-                                <form action="#" class="newsletter_form">
-                                    <input type="text" placeholder="Enter your mail">
-                                    <button type="submit">Subscribe</button>
-                                </form>
-                                <p class="newsletter_text">At Proventurax, our core values are built on reliability,
-                                    innovation, and customer-centricity. With integrity at
-                                    our foundation and a passion for operational excellence, we connect global markets
-                                    through sustainable,
-                                    efficient logistics—grounded in local expertise and driven by a global vision.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copy-right_text">
-                <div class="container">
-                    <div class="footer_border"></div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <p class="copy_right text-center">
-
-                                Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | made
-                                with
-                                by <a href="https://brillaris.pro/" target="_blank">Brillaris
-                                    Global</a>
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!--/ footer end  -->
-
-        <!-- Modal -->
-        <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="serch_form">
-                        <input type="text" placeholder="search">
-                        <button type="submit">search</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- JS here -->
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/isotope.pkgd.min.js"></script>
-        <script src="js/ajax-form.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/imagesloaded.pkgd.min.js"></script>
-        <script src="js/scrollIt.js"></script>
-        <script src="js/jquery.scrollUp.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/nice-select.min.js"></script>
-        <script src="js/jquery.slicknav.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <!-- <script src="js/gijgo.min.js"></script> -->
-        <script src="js/slick.min.js"></script>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | made
+                            with
+                            by <a href="https://brillaris.pro/" target="_blank">Brillaris
+                                Global</a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ footer end  -->
+
+    <!-- Modal -->
+    <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="serch_form">
+                    <input type="text" placeholder="search">
+                    <button type="submit">search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <!-- <script src="js/gijgo.min.js"></script> -->
+    <script src="js/slick.min.js"></script>
 
 
 
-        <!--contact js-->
-        <script src="js/contact.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/jquery.form.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/mail-script.js"></script>
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
 
 
-        <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
+    <!-- Custom scripts for enhanced UI -->
+    <script>
+        // Initialize WOW.js for animations
+        new WOW().init();
 
+        // Enhanced hover effects for value cards
+        $(document).ready(function () {
+            // Smooth scroll for anchor links
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top - 70
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
 
+            // Add animation delay to value cards
+            $('.single_value').each(function (index) {
+                $(this).attr('data-wow-delay', (0.2 * (index + 1)) + 's');
+            });
+        });
+    </script>
 
 </body>
 

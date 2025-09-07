@@ -67,6 +67,36 @@
       }
     });
 
+    // partners-active
+    $('.partners_active').owlCarousel({
+      loop: true,
+      margin: 30,
+      items: 5,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplaySpeed: 2000,
+      slideTransition: 'linear',
+      autoplayHoverPause: false,
+      smartSpeed: 2000,
+      navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
+      nav: false,
+      dots: false,
+      responsive: {
+        0: {
+          items: 2,
+        },
+        576: {
+          items: 3,
+        },
+        768: {
+          items: 4,
+        },
+        992: {
+          items: 5,
+        }
+      }
+    });
+
     // review-active
     $('.testmonial_active').owlCarousel({
       loop: true,

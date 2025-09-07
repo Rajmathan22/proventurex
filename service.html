@@ -36,6 +36,187 @@
             display: block;
             margin: 0 auto;
         }
+
+        .modern-service-area {
+            background: #f8f9fa;
+            padding: 60px 0 30px 0;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 24px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
+        }
+
+        .service-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+        }
+
+        .service-content {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 24px 18px 0 18px;
+        }
+
+        .service-content h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1a237e;
+            margin-bottom: 12px;
+        }
+
+        .service-content p {
+            color: #444;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        .row.justify-content-center {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-md-6.col-lg-4.mb-4 {
+            display: flex;
+        }
+
+        @media (max-width: 767px) {
+            .service-img {
+                height: 140px;
+            }
+
+            .service-content {
+                padding: 16px 8px 0 8px;
+            }
+        }
+
+        /* Responsive contact_location section for service.html */
+        .contact_location {
+            background: #f6fbfe;
+            padding: 40px 0 0 0;
+        }
+
+        .contact_location .location_left {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .contact_location .logo {
+            width: 100%;
+            max-width: 260px;
+            margin: 0 0 18px 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .contact_location .logo img {
+            width: 100%;
+            max-width: 220px;
+            height: auto;
+            display: inline-block;
+        }
+
+        .contact_location ul {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        .contact_location ul li a,
+        .contact_location ul li span {
+            font-size: 1.7rem;
+            color: #1a237e;
+            transition: color 0.2s;
+        }
+
+        .contact_location ul li a:hover {
+            color: #0d47a1;
+        }
+
+        .contact_location .single_location {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        @media (max-width: 991px) {
+            .contact_location .location_left {
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .contact_location .logo {
+                margin-bottom: 12px;
+                justify-content: center;
+            }
+
+            .contact_location ul {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .contact_location .row>div {
+                margin-bottom: 18px;
+            }
+
+            .contact_location .single_location {
+                text-align: center;
+            }
+
+            .contact_location .logo {
+                margin-bottom: 16px;
+                justify-content: center;
+            }
+
+            .contact_location .location_left {
+                align-items: center;
+            }
+
+            .contact_location ul {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .contact_location .logo {
+                max-width: 140px;
+            }
+
+            .contact_location .logo img {
+                max-width: 120px;
+            }
+        }
     </style>
 </head>
 
@@ -94,10 +275,10 @@
                                             <li><a href="index.html">home</a></li>
                                             <li><a href="About.html">about</a></li>
                                             <li><a href="service.html">Services</a></li>
-                                            <li><a href="#">Resources</a></li>
-                                            <li><a href="#">Industries</a></li>
-                                            <li><a href="#">carriers </a></li>
-                                            <li><a href="#">News</a></li>
+                                            <li><span class="nav-text">Resources</span></li>
+                                            <li><span class="nav-text">Industries</span></li>
+                                            <li><span class="nav-text">careers </span></li>
+                                            <li><span class="nav-text">News</span></li>
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </nav>
@@ -129,102 +310,85 @@
     </div>
     <!--/ bradcam_area  -->
     <!-- service_area  -->
-    <div class="service_area">
+    <div class="service_area modern-service-area">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_service">
-                        <div class="thumb">
-                            <img src="img/service/1.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h3><a href="#">Sea Freight</a></h3>
+            <div class="row justify-content-center">
+                <!-- Service Card Start -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <img src="img/service/1.png" alt="Sea Freight" class="service-img">
+                        <div class="service-content">
+                            <h4>Sea Freight</h4>
                             <p>Efficient, cost-effective global ocean shipping solutions for all types of cargo.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_service">
-                        <div class="thumb">
-                            <img src="img/service/aerocargo.jpg" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h3><a href="#">Air Freight</a></h3>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <img src="img/service/aerocargo.jpg" alt="Air Freight" class="service-img">
+                        <div class="service-content">
+                            <h4>Air Freight</h4>
                             <p>Fast, reliable air cargo services to meet urgent and time-sensitive shipping needs.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="single_service">
-                        <div class="thumb">
-                            <img src="img/service/db0cd3c375b0c97bdfd39ae023c80cb5.jpg" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h3><a href="#">Multimodal Transport</a></h3>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <img src="img/service/db0cd3c375b0c97bdfd39ae023c80cb5.jpg" alt="Multimodal Transport"
+                            class="service-img">
+                        <div class="service-content">
+                            <h4>Multimodal Transport</h4>
                             <p>Optimize your supply chain with efficient multimodal solutions.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_service">
-                        <div class="thumb">
-                            <img src="img/service/4.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h3><a href="#">Project Cargo</a></h3>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <img src="img/service/4.png" alt="Project Cargo" class="service-img">
+                        <div class="service-content">
+                            <h4>Project Cargo</h4>
                             <p>Expert handling of oversized, heavy-lift, and complex cargo movements.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_service">
-                        <div class="thumb">
-                            <img src="img/service/5.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h3><a href="#">Dangerous Goods Logistics</a></h3>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <img src="img/service/5.png" alt="Dangerous Goods Logistics" class="service-img">
+                        <div class="service-content">
+                            <h4>Dangerous Goods Logistics</h4>
                             <p>Safe, compliant transport of hazardous materials and chemicals worldwide.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="single_service">
-                        <div class="thumb">
-                            <img src="img/banner/banner.jpg" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h3><a href="#">RORO Services (Roll-On/Roll-Off)</a></h3>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <img src="img/banner/banner.jpg" alt="RORO Services" class="service-img">
+                        <div class="service-content">
+                            <h4>RORO Services (Roll-On/Roll-Off)</h4>
                             <p>Specialized shipping for vehicles, machinery, and wheeled cargo.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="single_service">
-                        <div class="thumb">
-                            <img src="https://plus.unsplash.com/premium_photo-1663011521878-3104725bde4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8UGhhcm1hJTIwTG9naXN0aWNzfGVufDB8fDB8fHww"
-                                alt="">
-                        </div>
-                        <div class="service_info">
-                            <h3><a href="#">Temperature-Controlled & Pharma Logistics</a></h3>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1663011521878-3104725bde4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8UGhhcm1hJTIwTG9naXN0aWNzfGVufDB8fDB8fHww"
+                            alt="Temperature-Controlled & Pharma Logistics" class="service-img">
+                        <div class="service-content">
+                            <h4>Temperature-Controlled & Pharma Logistics</h4>
                             <p>Maintain cold chain integrity for sensitive cargo.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="single_service">
-                        <div class="thumb">
-                            <img src="img/service/6.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h3><a href="#">Special Containers & OOG</a></h3>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <img src="img/service/6.png" alt="Special Containers & OOG" class="service-img">
+                        <div class="service-content">
+                            <h4>Special Containers & OOG</h4>
                             <p>Handling cargo that doesn’t fit standard dimensions? We’ve got you covered</p>
                         </div>
                     </div>
                 </div>
+                <!-- Service Card End -->
             </div>
         </div>
     </div>
@@ -239,7 +403,7 @@
                     <div class="col-xl-3 col-md-3">
                         <div class="single_counter text-center">
                             <h3> <span class="counter">25</span> <span>+</span> </h3>
-                            <p>Industry Experience</p>
+                            <p>Years Industry Experience</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-3">
@@ -277,7 +441,7 @@
                         <p>At PROVENTURAX INTERNATIONAL LOGISTICS LLP, we believe our people are our greatest strength.
                             We are always on the lookout for passionate, driven, and dynamic individuals who want to be
                             part of a growing global logistics force.</p>
-                        <a href="#" class="boxed-btn3">+91 9886066621</a>
+                        <span class="boxed-btn3">+91 9886066621</span>
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-8 col-md-7">
@@ -341,7 +505,7 @@
                                 </div>
                                 <div class="col-xl-12">
                                     <div class="input_field">
-                                        <button class="boxed-btn3-line" type="submit">Send Estimate</button>
+                                        <button class="boxed-btn3-line" type="submit">Seek Estimate</button>
                                     </div>
                                 </div>
                             </div>
@@ -356,34 +520,34 @@
     <!-- contact_location  -->
     <div class="contact_location">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="location_left">
-                        <div class="logo">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-3 mb-md-0">
+                    <div class="location_left d-flex flex-column align-items-start justify-content-center">
+                        <div class="logo mb-3" style="max-width:260px; width:100%; text-align:left;">
                             <a href="index.html">
-                                <img src="img/logo.png" alt="">
+                                <img src="img/logob.jpg" alt="Proventurax Logo"
+                                    style="width:100%; max-width:220px; height:auto; display:inline-block;">
                             </a>
                         </div>
-                        <ul>
-                            <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-youtube"></i> </a></li>
+                        <ul class="d-flex flex-row gap-3 mb-0"
+                            style="list-style:none; padding-left:0; justify-content:flex-start; width:100%;">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-3">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-12 mb-3 mb-md-0 d-flex flex-column justify-content-center">
                     <div class="single_location">
-                        <h3> <img src="img/icon/address.svg" alt=""> Location</h3>
-                        <p>Adress Data Want to be Added
-                            City Here</p>
+                        <h3><img src="img/icon/address.svg" alt="" style="width:22px; margin-right:6px;"> Location</h3>
+                        <p>Adress Data Want to be Added<br>City Here<br>Land Mark Here</p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-3">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-12 d-flex flex-column justify-content-center">
                     <div class="single_location">
-                        <h3> <img src="img/icon/support.svg" alt=""> Location</h3>
-                        <p>+91 9886066621 <br>
-                            balamurugan.pillai@proventuax.com</p>
+                        <h3><img src="img/icon/support.svg" alt="" style="width:22px; margin-right:6px;"> Contact</h3>
+                        <p>+91 9886066621 <br>balamurugan.pillai@proventuax.com</p>
                     </div>
                 </div>
             </div>
@@ -467,7 +631,7 @@
                         <p class="copy_right text-center">
 
                             Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | made with
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | made
                             by <a href="https://brillaris.pro/" target="_blank">Brillaris
                                 Global</a>
 
